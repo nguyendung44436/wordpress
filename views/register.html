@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Our Kids</title>
+  <link href="https://fonts.googleapis.com/css?family=Days+One|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/icons/icomoon/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" href="../assets/images/our-kids.png">
+
+</head>
+
+<body>
+  
+  <main class=" container-fluid">
+    <div class="row">
+      <div class="col m8 hide-on-small-only" id="pd0">
+        <img  class="w100"src="../assets/images/rocket3.png" alt="rocket">
+      </div>
+      <div class="border-register col s12 m4">
+        <div class="box-img-register">
+          <img class="img-logo-white hide-on-med-and-up" src="../assets/images/logo-white.png" alt="logo">
+          <img class="img-logo-white hide-on-small-only" src="../assets/images/our-kids-logo2.png" alt="logo">
+        </div>
+        <div class="box-btn">
+          <a class="waves-effect waves-light modal-trigger btn  " href="#modal2">Iniciar Sesión</a>
+          <a class="waves-effect waves-light modal-trigger btn  " href="#modal1">Registrate</a>
+
+        </div>
+<div class="error"></div>
+    </div>
+    
+      </div>
+      <div class="message-ini hide-on-small-only"><p>Con o sin autismo todos los niños tienen potencial para despegar hacia sus sueños</p></div>
+  </main>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal center">
+    <div class="modal-header right-align">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green">X</a>
+    </div>
+    <div class="modal-content">
+      <h3>Registrate</h3>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input type="text" class="validate name-register">
+        <label for="icon_prefix">Nombre</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">email</i>
+        <input type="text" class="validate email-register">
+        <label for="icon_prefix">Email</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">lock</i>
+        <input type="password" class="validate password-register">
+        <label for="icon_prefix">Password</label>
+      </div>
+    </div>
+    <div class="modal-footer" id="alg-center">
+      <button class="modal-action modal-close waves-effect waves-green btn-style btn btn-register" disabled>Registrar</button>
+    </div>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal center">
+    <div class="modal-header right-align">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green">X</a>
+    </div>
+    <div class="modal-content">
+      <h4>Iniciar Sesión</h4>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="email2" class="email-login" type="email" placeholder="Ingresa email">
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">lock</i>
+        <input class="password-login" id="contraseña2" type="password" placeholder="Ingresa contraseña">
+      </div>
+
+      <div class="modal-footer" id="alg-center">
+        <button onclick="" class="modal-action modal-close waves-effect waves-green btn btn-style btn-login " disabled>Iniciar Sesión</button>
+      </div>
+      <div class="box-login-sn">
+        <a href="#" class="btn-facebook">
+          <span class="icon-facebook"></span>Iniciar Sesión con Facebook</a>
+      </div>
+      <div class="box-login-sn">
+        <a href="#" class="btn-google">
+          <span class="icon-google"></span>Iniciar Sesión con Google</a>
+      </div>
+
+    </div>
+  </div>
+  <div id="contenido">
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="../vendors/materialize/js/materialize.min.js"></script>
+
+  <!--<script src="../js/register.js"></script>-->
+  <script src="../js/user.js"></script>
+</body>
+
+</html>
