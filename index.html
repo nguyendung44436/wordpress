@@ -1,26 +1,622 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Our Kids</title>
-  <link rel="icon" href="assets/images/our-kids.png">
-  <link rel="stylesheet" href="css/main.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>NguyenDung </title>
+  <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" mce_href="http://jt.NguyenDung.xyz/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/slider.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 </head>
-<body class="splash">
-  <div class="row">
-    <div class="col s12">
-      <div class="img-splash">
-        <img class="img-logo-splash" src="assets/images/our-kids-logo2.png" alt="">
-      </div>
-      <div class="loader"></div>
-    </div> 
+<body>
+<!-- Thanh điều hướng -->
+<header>
+  <div class="container">
+    <div class="navbar-header">
+      <a href="" class="navbar-brand">
+        <img src="assets/images/logo.png" alt="">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav navbar-nav navbar-link">
+        <li class="active"><a href="index.html">Trang chủ</a></li>
+        <li><a href="category/Piano">Piano</a></li>
+        <li><a href="category/guitar">Guitar</a></li>
+        <li><a href="category/cartoon">Cartoon</a></li>
+        <li><a href="category/elect">Electrinic</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right navbar-sm">
+        <!--<li><input type="text" class="search-input" placeholder="Tên bài hát / Ca sĩ"></li>-->
+        <!--<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>-->
+        <!--<li><a href="#">Đăng ký/Đăng nhập</a></li>-->
+      </ul>
+    </nav>
   </div>
-  <script src="vendors/js/jquery-3.2.1.min.js"></script>
-  <script src="vendors/materialize/js/materialize.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/data.js"></script>
+</header>
+<!-- Băng chuyền -->
+<div class="container-sm slider-wrap">
+  <div class="slider">
+    <div class="slider-item-list"></div>
+    <div class="slider-dots">
+      <div class="slider-dots-wrap"></div>
+    </div>
+    <div class="slider-arrows">
+      <div class="slider-arrows-wrap">
+        <span class="slider-arrow slider-arrow-left" onclick="HBSlider.turn(-1)"></span>
+        <span class="slider-arrow slider-arrow-right" onclick="HBSlider.turn(1)"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Khu vực nội dung chính -->
+<div class="container-sm box">
+  <!-- 主内容 -->
+  <div class="main">
+    <div class="main-wrap">
+      <div class="content-box">
+        <!-- Đề xuất phổ biến -->
+        <div class="hot-recommand">
+          <div class="content-header">
+            <h2><i class="fa fa-music red"></i>Đề xuất phổ biến</h2>
+            <div class="tab">
+              <a href="category/Piano">Piano</a>
+              <span class="line">|</span>
+              <a href="category/guitar">Guitar</a>
+              <span class="line">|</span>
+              <a href="category/cartoon">Cartoon</a>
+              <span class="line">|</span>
+              <a href="category/elect">Electrinic</a>
+            </div>
+            <!--<span class="more"><a href="#">Hơn</a></span>-->
+          </div>
+          <ul class="music-list clearfix">
+            <li>
+              <div class="u-cover">
+                <img src="http://p3.music.126.net/fNtMX44fvaGByURP0AbOZQ==/836728348761063.jpg">
+                <a title="Mùa xuân trong em - Anan Ryoko" href="./music/muaxuantrongem.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Mùa xuân trong em - Anan Ryoko" href="./music/muaxuantrongem.html">Mùa xuân trong em</a>
+              </p>
+              <div class="author">NguyenDung</div>
+            </li>
+            <li>
+              <div class="u-cover">
+                <img src="http://p4.music.126.net/ap7KvRE0-V4kfThDVVor9A==/18777459579736085.jpg">
+                <a title="Hãy hát lên bài ca đất nước - Isomura Yukiko" href="./music/hayhatlenbaicadatnuoc.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Hãy hát lên bài ca đất nước - Isomura Yukiko" href="./music/hayhatlenbaicadatnuoc.html">Hãy hát lên bài ca đất nước</a>
+              </p>
+              <div class="author">NguyenDung</div>
+            </li>
+            <li>
+              <div class="u-cover">
+                <img src="http://p3.music.126.net/hNJFmhHzaGxYYwVbQbALNw==/79164837215733.jpg">
+                <a title="Đôi ngả sông quê - Shi Jin" href="./music/doingasongque.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Đôi ngả sông quê - Shi Jin" href="./music/doingasongque.html">Đôi ngả sông quê</a>
+              </p>
+              <div class="author">NguyenDung</div>
+            </li>
+            <li>
+              <div class="u-cover">
+                <img src="http://p3.music.126.net/l5-9FCPKx9xrUtzyKCMPPw==/81363860481074.jpg">
+                <a title="Thương nhớ tiếng mưa rơi - 岸部眞明" href="./music/thuongnhotiengmuaroi.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Thương nhớ tiếng mưa rơi - 岸部眞明" href="./music/thuongnhotiengmuaroi.html">Thương nhớ tiếng mưa rơi</a>
+              </p>
+              <div class="author">NguyenDung</div>
+            </li>
+            <li>
+              <div class="u-cover">
+                <img src="http://p3.music.126.net/N0b8fzm7vl6tkj1Rfqa3hQ==/794946906935600.jpg">
+                <a title="Cần Thơ, Cần Thơ - 7AND5" href="./music/canthocantho.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Cần Thơ, Cần Thơ - 7AND5" href="./music/canthocantho.html">Cần Thơ, Cần Thơ</a>
+              </p>
+              <div class="author">NguyenDung</div>
+            </li>
+            <li>
+              <div class="u-cover">
+                <img src="http://p4.music.126.net/Kcxcv0cfsdAx30HZ_6tDGQ==/827932255715549.jpg">
+                <a title="Khúc giao thừa - Nguyễn Dũng" href="./music/khucgiaothua.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Khúc giao thừa - Nguyễn Dũng" href="./music/khucgiaothua.html">Khúc giao thừa</a>
+              </p>
+              <div class="author">Nguyễn Dũng</div>
+            </li>
+            <li>
+              <div class="u-cover">
+                <img src="http://p3.music.126.net/P1ac-TWkFzjDqcvl5_oK7Q==/881808325476577.jpg">
+                <a title="Bay vào tương lai - DJ OKAWARI" href="./music/bayvaotuonglai.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Bay vào tương lai - DJ OKAWARI" href="./music/bayvaotuonglai.html">Bay vào tương lai</a>
+              </p>
+              <div class="author">NguyenDung</div>
+            </li>
+            <li>
+              <div class="u-cover">
+                <img src="http://p4.music.126.net/8dzD62VK8jLDbhEqkmpIAg==/18277181788626198.jpg">
+                <a title="Hoa khôi Đồng bằng - Alan Walker" href="./music/hoakhoidongbang.html" class="msk"></a>
+              </div>
+              <p class="dec">
+                <a title="Hoa khôi Đồng bằng - Alan Walker" href="./music/hoakhoidongbang.html">Hoa khôi Đồng bằng</a>
+              </p>
+              <div class="author">NguyenDung</div>
+            </li>
+          </ul>
+        </div>
+        <!-- Danh sách chuyên mục -->
+        <div class="category">
+          <div class="content-header">
+            <h2><i class="fa fa-music red"></i>Danh sách chuyên mục</h2>
+          </div>
+          <div class="row">
+            <div class="category-music-list">
+              <div class="category-header">
+                🎹 Piano
+              </div>
+              <ul>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">1</span>
+                      <a href="./music/muaxuantrongem.html" title="Mùa xuân trong em">Mùa xuân trong em</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-26</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/18.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">2</span>
+                      <a href="./music/hayhatlenbaicadatnuoc.html" title="Hãy hát lên bài ca đất nước">Hãy hát lên bài ca đất nước</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-20</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/10.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">3</span>
+                      <a href="./music/dongcamsechia.html" title="Đồng cảm sẻ chia">Đồng cảm sẻ chia</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-25</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/25.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">4</span>
+                      <a href="./music/bensongbuon.html" title="Bến sông buồn">Bến sông buồn</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-17</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/5.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">5</span>
+                      <a href="./music/nghetiengbac.html" title="Nghe tiếng Bác">Nghe tiếng Bác</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-13</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/24.jpg"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="category-music-list">
+              <div class="category-header">
+                🎸 Guitar
+              </div>
+              <ul>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">1</span>
+                      <a href="./music/muadi.html" title="Mùa đi">Mùa đi</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-12</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/20.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">2</span>
+                      <a href="./music/motminhduoimua.html" title="Một mình dưới mưa">Một mình dưới mưa</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-22</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/3.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">3</span>
+                      <a href="./music/thoilaichieuve.html" title="Thới Lai chiều vê">Thới Lai chiều vê</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-23</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/1.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">4</span>
+                      <a href="./music/vevoimecha.html" title="Về với mẹ cha">Về với mẹ cha</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-22</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/2.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">5</span>
+                      <a href="./music/thuongnhotiengmuaroi.html" title="Thương nhớ tiếng mưa rơi">Thương nhớ tiếng mưa rơi</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-21</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/6.jpg"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="category-music-list">
+              <div class="category-header">
+                🍡 Cartoon
+              </div>
+              <ul>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">1</span>
+                      <a href="./music/thienthantrenpho.html" title="Thiên thần trên phố">Thiên thần trên phố</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-23</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/12.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">2</span>
+                      <a href="./music/thanglong.html" title="Thăng Long">Thăng Long</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-14</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/1.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">3</span>
+                      <a href="./music/ruxuan.html" title="Ru xuân">Ru xuân</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-26</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/4.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">4</span>
+                      <a href="./music/nuhonmuahe.html" title="Nụ hôn mùa hè">Nụ hôn mùa hè</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-25</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/17.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">5</span>
+                      <a href="./music/nhipcauyeuthuong.html" title="Nhịp cầu yêu thương">Nhịp cầu yêu thương</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-17</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/9.jpg"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="category-music-list">
+              <div class="category-header">
+                ⚡️ Electrinic
+              </div>
+              <ul>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">1</span>
+                      <a href="./music/thumientay.html" title="Thư miền Tây">Thư miền Tây</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-23</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/17.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">2</span>
+                      <a href="./music/hatchoquehuongtoi.html" title="Hát cho quê hương tôi">Hát cho quê hương tôi</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-12</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/14.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">3</span>
+                      <a href="./music/uoccomotnguoi.html" title="Ước có một người">Ước có một người</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-13</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/5.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">4</span>
+                      <a href="./music/canthocantho.html" title="Cần Thơ, Cần Thơ">Cần Thơ, Cần Thơ</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">11-25</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/2.jpg"></span>
+                  </div>
+                </li>
+                <li class="music-list-item">
+                  <div class="title">
+                    <div class="title_wrap">
+                      <span class="rank">5</span>
+                      <a href="./music/hoakhoidongbang.html" title="Hoa khôi Đồng bằng">Hoa khôi Đồng bằng</a>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <span class="date">12-24</span>
+                    <span class="avatar"><img
+                        src="./storage/avatar/10.jpg"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 侧边栏 -->
+  <div class="sidebar" style="min-height: 1094px">
+    <div class="right-module">
+      <h4>Đĩa đơn mới nhất</h4>
+      <ul class="new-artist-songs">
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/0.jpg">
+          </div>
+          <div class="info">
+            <h3>Mùa xuân trong em</h3>
+            <p>NguyenDung / <span>1595</span>Lượt nghe</p>
+          </div>
+          <a href="./music/muaxuantrongem.html" title="Mùa xuân trong em" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/4.jpg">
+          </div>
+          <div class="info">
+            <h3>Khúc giao thừa</h3>
+            <p>Nguyễn Dũng / <span>1052</span>Lượt nghe</p>
+          </div>
+          <a href="./music/khucgiaothua.html" title="Khúc giao thừa" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/3.jpg">
+          </div>
+          <div class="info">
+            <h3>Một mình dưới mưa</h3>
+            <p>NguyenDung/ <span>349</span>Lượt nghe</p>
+          </div>
+          <a href="./music/motminhduoimua.html" title="Một mình dưới mưa" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/14.jpg">
+          </div>
+          <div class="info">
+            <h3>Hát cho quê hương tôi</h3>
+            <p>NguyenDung / <span>420</span>Lượt nghe</p>
+          </div>
+          <a href="./music/hatchoquehuongtoi.html" title="Hát cho quê hương tôi" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/5.jpg">
+          </div>
+          <div class="info">
+            <h3>Bến sông buồn</h3>
+            <p>NguyenDung / <span>1356</span>Lượt nghe</p>
+          </div>
+          <a href="./music/bensongbuon.html" title="Bến sông buồn" class="cover-link"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-module">
+      <h4>Đĩa đơn phổ biến</h4>
+      <ul class="new-artist-songs">
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/20.jpg">
+          </div>
+          <div class="info">
+            <h3>Mùa đi</h3>
+            <p>NguyenDung/ <span>1167</span>Lượt nghe</p>
+          </div>
+          <a href="./music/muadi.html" title="Mùa đi" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/0.jpg">
+          </div>
+          <div class="info">
+            <h3>Cần Thơ, Cần Thơ</h3>
+            <p>NguyenDung / <span>1008</span>Lượt nghe</p>
+          </div>
+          <a href="./music/canthocantho.html" title="Cần Thơ, Cần Thơ" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/9.jpg">
+          </div>
+          <div class="info">
+            <h3>Đôi ngả sông quê</h3>
+            <p>NguyenDung / <span>864</span>Lượt nghe</p>
+          </div>
+          <a href="./music/doingasongque.html" title="Đôi ngả sông quê" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/00.jpg">
+          </div>
+          <div class="info">
+            <h3>Về với mẹ cha</h3>
+            <p>NguyenDung / <span>838</span>Lượt nghe</p>
+          </div>
+          <a href="./music/vevoimecha.html" title="Về với mẹ cha" class="cover-link"></a>
+        </li>
+        <li class="artist-song">
+          <div class="avatar">
+            <img src="./storage/avatar/17.jpg">
+          </div>
+          <div class="info">
+            <h3>Thư miền Tây</h3>
+            <p>NguyenDung / <span>821</span>Lượt nghe</p>
+          </div>
+          <a href="./music/thumientay.html" title="Thư miền Tây" class="cover-link"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- 底部版权 -->
+<footer>
+  <div class="container">
+    <div class="copyright">
+      <p>Copyright © <span class="update-year">2021</span> NguyenDung - All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+<!-- JS 脚本 -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/HBSlider.js"></script>
+<script>
+  // Băng chuyền数据
+  var sliderData = [
+    {
+      title: 'Một mình dưới mưa',
+      pic: './storage/slider/01.png',
+      url: './music/motminhduoimua.html'
+    },
+    {
+      title: 'Bay vào tương lai',
+      pic: 'http://img.zcool.cn/community/0109575540b83d0000017c946b5535.jpg',
+      url: './music/bayvaotuonglai.html'
+    },
+    {
+      title: 'Khúc giao thừa - Nguyễn Dũng',
+      pic: 'http://ww2.sinaimg.cn/large/67d25024gw1fb5h1swze9j20gq0b6acf.jpg',
+      url: './music/khucgiaothua.html'
+    },
+    {
+      title: 'Gặp em trên bến Ninh Kiều',
+      pic: 'http://ww4.sinaimg.cn/mw690/67d25024gw1fb5hbjl32jj21hc0u01dz.jpg',
+      url: './music/gapemtrenbenninhkieu.html'
+    }
+  ];
+
+  $(function () {
+    HBSlider.setConfig({
+      autoPlay: true,
+      delay: 5
+    });
+    HBSlider.setItems(sliderData);
+    HBSlider.init();
+    HBSlider.play();
+  });
+</script>
 </body>
 </html>
